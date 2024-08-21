@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        menuInput = prompt("Ayo berhitung! Tekan angka 1-5 untuk: \n 1. Penjumlahan \n 2. Pengurangan \n 3. Perkalian \n 4. Pembagian \n 5. Sisa bagi")
+        num1 = prompt("Input angka pertama:")
+        num2 = prompt("Input angka kedua:")
+        
+        switch (menuInput) {
+
+            case "1":
+                hasil = parseInt(num1) + parseInt(num2)
+                document.write(hasil)
+                break;
+
+            case "2":
+                hasil = parseInt(num1) - parseInt(num2)
+                document.write(hasil)
+                break;
+
+            case "3":
+                hasil = parseInt(num1) * parseInt(num2)
+                document.write(hasil)
+                break;
+
+            case "4":
+                hasil = parseInt(num1) / parseInt(num2)
+                document.write(hasil)
+                break;
+
+            case "5":
+                hasil = parseInt(num1) % parseInt(num2)
+                document.write(hasil)
+                break;
+        
+            default:
+                document.write("Tidak ada di menu")
+                break;
+        }
+    </script>
+</body>
+</html>
